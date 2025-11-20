@@ -1,6 +1,4 @@
-import type { User, Project, Task, Client, Team, TimeEntry } from '@prisma/client'
-
-// API Response Types
+// API Response Types (for future backend integration)
 export interface ApiResponse<T = unknown> {
   success: boolean
   data?: T
@@ -10,28 +8,6 @@ export interface ApiResponse<T = unknown> {
     details?: unknown
   }
   message?: string
-}
-
-// Extended Types with Relations
-export type UserWithRelations = User & {
-  projectsOwned?: Project[]
-  tasksAssigned?: Task[]
-  clientProfile?: Client | null
-}
-
-export type ProjectWithRelations = Project & {
-  client: Client
-  owner: User
-  _count?: {
-    tasks: number
-    members: number
-  }
-}
-
-export type TaskWithRelations = Task & {
-  project: Project
-  assignee?: User | null
-  creator: User
 }
 
 // Form Types
@@ -78,4 +54,3 @@ export interface DashboardStats {
   totalHours: number
   teamMembers: number
 }
-
