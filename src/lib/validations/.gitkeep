@@ -1,0 +1,8 @@
+# Zod Validation Schemas
+
+This directory contains Zod schemas for validation:
+- projectSchema.ts
+- taskSchema.ts
+- userSchema.ts
+- etc.
+

@@ -1,0 +1,13 @@
+# UI Components (shadcn/ui)
+
+This directory will contain UI components from shadcn/ui.
+
+To add components, run:
+```bash
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add input
+npx shadcn@latest add dialog
+# etc.
+```
+

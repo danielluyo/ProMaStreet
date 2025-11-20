@@ -1,0 +1,8 @@
+# Shared Components
+
+This directory contains reusable shared components:
+- DataTable
+- LoadingSpinner
+- ErrorMessage
+- etc.
+

@@ -1,0 +1,7 @@
+# Zustand State Stores
+
+This directory contains Zustand stores for global state management:
+- authStore.ts
+- uiStore.ts
+- etc.
+
