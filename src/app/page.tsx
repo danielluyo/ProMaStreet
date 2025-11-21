@@ -40,13 +40,21 @@ export default function LandingPage() {
             <span className="text-gray-500">Beyond project management. Beyond task tracking.</span>
           </p>
 
-          {/* CTA Button */}
-          <Link href="/dashboard">
-            <Button className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white px-8 py-6 text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all">
-              View Executive Dashboard
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/dashboard">
+              <Button className="bg-gradient-to-r from-blue-600 to-orange-500 hover:from-blue-700 hover:to-orange-600 text-white px-8 py-6 text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all">
+                View Executive Dashboard
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/value-proposition">
+              <Button variant="outline" className="border-2 border-orange-500 text-orange-600 hover:bg-orange-50 px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all">
+                Value Proposition
+                <Target className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
 
           <p className="text-sm text-gray-500 mt-4">
             Fully functional demo with realistic data
